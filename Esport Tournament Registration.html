@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>GameVerse Tournament Registration</title>
+    </head>
+    <body>
+<header>
+    <h1>Tournament Registration</h1>
+    <p>Ready to prove your skills? Register now and compete for glory in our upcoming gaming tournament.</p>
+</header>
+<main>
+    <form method="post" action="https://www.gameverse.com/register">
+        <fieldset>
+            <legend>Participant Information</legend>
+            <label for="full-name">Name (required)</label>
+            <input required type="text" id="full-name" name="name" placeholder="John Doe">
+            <label for="Gamertag">Gamertag (required)</label>
+            <input required type="text" id="Gamertag" name="Gamertag" placeholder="ProGamer21">
+            <label for="email">Email address (required)</label>
+            <input required type="email" id="email" name="email" placeholder="example@gmail.com">
+            <label for="age">Age (required)</label>
+            <input required type="number" id="age" name="age"  min="18" max="99" placeholder="18">
+        </fieldset>
+        <fieldset>
+            <legend>Tournament Details</legend>
+            <label for="Game-Selection">Game Selection</label>
+            <select  required name="Game-Selection" id="Game-Selection">
+                <option value="">Select a game</option>
+                <option value="Valorant">Valorant</option>
+                <option value="Counter-Strike 2">Counter-Strike 2</option>
+                <option value="League-of-Legends">League of Legends</option>
+                <option value="Fortnite">Fortnite</option>
+                <option value="Rocket-League">Rocket League</option>
+            </select>
+            <label for="Experience-Level">Experience Level</label>
+            <select required  name="Experience-Level" id="Experience-Level">
+                <option value="">Select your Level</option>
+            <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+            <label for="country">Country (optional)</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country">
+            </fieldset>
+            <fieldset>
+                <legend>Accept Tournament Rules</legend>
+                <p>I have read and agree to the tournament rules.</p>
+                <ol>
+                    <li>No cheating or hacks.</li>
+                    <li>Respect all players.</li>
+                    <li>Follow tournament schedules</li>
+                    <li>Use your registered gamertag.</li>
+                    <li>Follow organizer instructions</li>
+                </ol>
+                <input  required type="checkbox" id="Rules" name="Rules" value="Rules">
+                <label for="Rules">I agree to the tournament rules and code of conduct</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea cols="40" rows="10" id="Comments" name="Comments" placeholder="Enter any additional information..."></textarea><br>
+                </fieldset>
+                <button type="submit">Register Now</button>
+    </form>
+</main>
+    </body>
+    </html>

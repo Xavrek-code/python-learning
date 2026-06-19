@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>GameVerse Tournament Registration</title>
+    </head>
+    <body>
+<header>
+    <h1>Tournament Registration</h1>
+    <p>Ready to prove your skills? Register now and compete for glory in our upcoming gaming tournament.</p>
+</header>
+<main>
+    <form method="post" action="https://www.gameverse.com/register">
+        <fieldset>
+            <legend>participant information</legend>
+            <label for="full-name">name (required)</label>
+            <input required type="text" id="full-name" name="name" placeholder="John Doe">
+            <label for="Gamertag">Gamertag (required)</label>
+            <input required type="text" id="Gamertag" name="Gamertag" placeholder="ProGamer21">
+            <label for="email">Email address (required)</label>
+            <input required type="email" id="email" name="email" placeholder="example@gmail.com">
+            <label for="age">age (required)</label>
+            <input type="number" id="age" name="age" max="2">
+        </fieldset>
+    </form>
+</main>
+    </body>
+    <html>
